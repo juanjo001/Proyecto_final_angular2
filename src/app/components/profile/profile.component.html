@@ -1,0 +1,43 @@
+<h1>Listado Exclusivo</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Item</th>
+      <th scope="col">Item</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Aviones</td>
+      <td>Edificios</td>
+      <td>Casa de campo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Autos</td>
+      <td>Perros</td>
+      <td>Casas</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td scope="row" ></td>
+      <td align="left"><p>Iniciaste sesion con:</p>
+        <ul *ngIf="auth.user$ | async as user">
+            <li>{{ user.name }}</li>
+            <li>{{ user.email }}</li>
+        </ul></td>
+      
+    </tr>
+  </tbody>
+</table>
+  
+
+
+
+
+
+
